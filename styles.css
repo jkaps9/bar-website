@@ -35,6 +35,7 @@ body {
   font-size: 16px;
   background-color: var(--primary-color);
   color: var(--secondary-color);
+  position: relative;
 }
 
 ul {
@@ -74,7 +75,6 @@ img {
   align-items: center;
   padding: 0 var(--base-LR-padding);
   margin: 0 auto;
-  position: relative;
 }
 
 .navbar__main-menu-list {
@@ -94,10 +94,8 @@ img {
 
 .navbar__mobile-menu {
   display: none;
-  z-index: 900;
   position: absolute;
   top: 0;
-  left: 0;
   right: 0;
   width: 100%;
   height: 80%;
@@ -108,7 +106,7 @@ img {
   border-top: 1px solid #333;
 }
 
-.active {
+.navbar__mobile-menu.active {
   display: block;
 }
 
